@@ -1,0 +1,34 @@
+{
+  "name": "exit",
+  "version": "1.0.0",
+  "description": "Fron-end-course",
+  "main": "scripts/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "sass --watch scss/style.scss css/style.css",
+    "serve": "serve",
+    "start": "npm-run-all --parallel serve watch-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnneliNova/fron-end-course.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "Anneli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnneliNova/fron-end-course/issues"
+  },
+  "homepage": "https://github.com/AnneliNova/fron-end-course#readme",
+  "dependencies": {
+    "sass": "^1.58.0",
+    "serve": "^14.2.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

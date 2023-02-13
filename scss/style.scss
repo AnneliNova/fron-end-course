@@ -45,7 +45,7 @@ text-decoration: none;
 color: white;
 border-bottom: 5px solid transparent;
 }
-
+.sort__item.active,   
 .sort__item:hover {
 	background-color: #0F0D0E;
 	border-bottom-color: #FF7474;
@@ -77,13 +77,6 @@ border-bottom: 5px solid transparent;
 	position: relative;
 	height: 250px;
 	overflow: hidden;
-	@include background-img('../image/poster3.jpg');
-}
-.card__header1 {
-	position: relative;
-	height: 250px;
-	overflow: hidden;
-	@include background-img('../image/poster5.jpg');
 }
 .card__title {
 	position: absolute;
@@ -91,7 +84,19 @@ border-bottom: 5px solid transparent;
 	bottom: $double-std-indent;
 	font-weight: 900;
 	-webkit-text-stroke:  0.05rem rgba(0, 0, 0, .5);
+}
 
+#first {
+	@include background-img('../image/avatar.jpg');	
+}
+#second {
+	@include background-img('../image/cat.jpg');
+}
+#third{
+	@include background-img('../image/poster3.jpg');
+}
+#fourth{
+	@include background-img('../image/poster5.jpg');
 }
 
 .card__info {
@@ -151,7 +156,6 @@ border-bottom: 5px solid transparent;
 		align-items: flex-start;
 		height: fit-content;
 	}
-
 
 .sort {
 	.sort__item,.sort__label {

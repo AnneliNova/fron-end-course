@@ -2,7 +2,7 @@
 /*text color*/
 /* indents */
 /*radius*/
-.card__header1, .card__header, .header {
+#fourth, #third, #second, #first, .header {
   background-position: center top;
   background-size: cover;
 }
@@ -52,6 +52,7 @@ body {
   border-bottom: 5px solid transparent;
 }
 
+.sort__item.active,
 .sort__item:hover {
   background-color: #0F0D0E;
   border-bottom-color: #FF7474;
@@ -91,14 +92,6 @@ body {
   position: relative;
   height: 250px;
   overflow: hidden;
-  background-image: url("../image/poster3.jpg");
-}
-
-.card__header1 {
-  position: relative;
-  height: 250px;
-  overflow: hidden;
-  background-image: url("../image/poster5.jpg");
 }
 
 .card__title {
@@ -107,6 +100,22 @@ body {
   bottom: 32px;
   font-weight: 900;
   -webkit-text-stroke: 0.05rem rgba(0, 0, 0, 0.5);
+}
+
+#first {
+  background-image: url("../image/avatar.jpg");
+}
+
+#second {
+  background-image: url("../image/cat.jpg");
+}
+
+#third {
+  background-image: url("../image/poster3.jpg");
+}
+
+#fourth {
+  background-image: url("../image/poster5.jpg");
 }
 
 .card__info {
